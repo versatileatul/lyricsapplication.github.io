@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins:wght@200&family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gochi Hand', cursive;
+    background: rgb(40,40,40) ;
+}
+header{
+    padding: 30px;
+    background: linear-gradient(to right, rgba(14,236,151,.65),
+    rgba(128,13,223,.65)),
+    url(dark-rider-JmVaNyemtN8-unsplash.jpg);
+    
+    height: 85vh;
+    width: 100vw;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+.container{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.container h1{
+    margin-bottom:40px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+form{
+    position: relative;
+    display: flex;
+    width: 500px;
+}
+input{
+    width: 100%;
+    max-width: 100%;
+    height: 50px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    
+
+}
+button{
+    width: 110px;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    top: 2px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(134, 32, 134);
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+button:hover{
+    transform: scale(0.96);
+}
+.result{
+    font-family: 'robot condensed';
+    letter-spacing: 2px;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-top: 25px;
+}
+.song-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.song-list li{
+    margin-bottom: 10px;
+    width: 500px;
+    justify-content:space-evenly;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: underline;
+
+}
+.song-list li span{
+    float: left;
+    background-color:rgba(128,13,223,.65) ;
+    font-size: 12px;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 4px 10px;
+}
